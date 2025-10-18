@@ -1,0 +1,9 @@
+f = [3, 4, 8, 10, 6, 14]       # f is the list, the box holding the numbers.
+for i in range(1, len(f)):     # starts a loop that picks from index 1, since 3 is the lowest
+    k = f[i]               # put current value in temporary pocket k, the one we are trying to place in the right spot
+    j = i - 1         # look at index immediately left of i and check sorted part
+    while j >= 0 and f[j] > k:  # while we haven't reached index 0 yet and f[j] is the highest
+     f[j + 1] = f[j]       # move highest number one step to the right to make space for k
+     j -= 1      # move one step left
+    f[j + 1] = k    # places k in the correct spot in the list
+print(f)       # run code to print the corrected list
