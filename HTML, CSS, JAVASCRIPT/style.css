@@ -1,0 +1,12 @@
+img {
+        width: 100px;
+        border-radius: 50px;
+        display: block;
+      }
+
+      .username {
+        font-weight: bold;
+      }
+      button:hover {
+        background-color: red;
+      }
